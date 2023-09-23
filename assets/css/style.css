@@ -1,0 +1,154 @@
+:root {
+    --background: #1b1b1b;
+    --text-primary: #fff;
+    --text-secondary: #cdcdcd;
+    --text-decoration-color:#8cb4ff;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Poppins&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rubik:wght@500&display=swap);
+
+
+@font-face {
+    font-family: 'JetBrainsMonoBold';
+    src: url('../font/JetBrainsMonoNFM-Bold.woff2') format('woff2'),
+        url('../font/JetBrainsMonoNFM-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: auto;
+}
+@font-face {
+    font-family: 'JetBrainsMonoLight';
+    src: url('../font/JetBrainsMonoNFM-Light.woff2') format('woff2'),
+        url('../font/JetBrainsMonoNFM-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    width: 1550;
+    height: 680
+}
+
+
+body {
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: JetBrainsMonoLight;
+    padding: 0;
+    margin: -7px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    position: absolute;
+}
+
+u {
+    text-decoration-color:var(--text-decoration-color);
+    font-family: Rubik;
+}
+
+.topnav {
+    overflow: hidden;
+    position: sticky;
+    z-index: 700;
+    top: 0;
+    padding-left: 50px;
+    border-radius: 2px;
+    height: 64px;
+    background-color: var(--background);
+    margin: 8px;
+    padding-top: 10px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #cdcdcd;
+    font-family: Rubik;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    width: 1548px;
+}
+
+.topnav a {
+    color: var(--text-secondary);
+    top: 0%;
+    float:left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topnav a:hover {
+    opacity: 0,1;
+    color: #8cb4ff;
+}
+
+.topnav a.active {
+    background: fixed;
+}
+
+.topnav a.active:hover {
+    background: fixed;
+    color: var(--text-secondary);
+}
+
+box {
+    width: 300px;
+    border: 5px solid var(--text-secondary);
+    margin: 20px;
+    padding: 5px;
+    font-size: 40px;
+    color: var(--text-secondary);
+    font-family: Rubik;
+}
+
+.inline {
+    display: inline;
+    color: #8cb4ff;
+}
+
+section.main {
+    text-align: right;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 250px;
+    padding-right: 8px;
+    height: 200px;
+    width: auto;
+    font-size: 30px;
+    display: flex;
+}
+
+h1.main {
+    padding-left: 550px;
+}
+
+.nav-links {
+    text-align: center;
+}
+
+main {
+    padding-left: 200px
+}
+
+.vertical-line {
+    width: 8px;
+    height: 76.25px;
+    margin-top: 22px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+    padding-right: 0px;
+    background-color: white;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-top: 3px solid white;
+    width: 1607px;
+}
