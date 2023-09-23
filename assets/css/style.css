@@ -30,7 +30,8 @@
 
 * {
     width: 1550;
-    height: 680
+    height: 680;
+    scroll-behavior: smooth;
 }
 
 
@@ -104,10 +105,6 @@ box {
     font-family: Rubik;
 }
 
-.inline {
-    display: inline;
-    color: #8cb4ff;
-}
 
 section.main {
     text-align: right;
@@ -149,6 +146,31 @@ footer {
     left: 0;
     right: 0;
     text-align: center;
-    border-top: 3px solid white;
     width: 1607px;
+}
+
+
+.typing::after {
+	content: '_';
+	color: #8cb4ff;
+    font-family: JetBrainsMonoBold;
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
