@@ -1,5 +1,5 @@
 var typed = new Typed(".typing", {
-    strings: [`<u>Someone</u>`],
+    strings: [`<u>Game without graphics</u>`, `<u>room without furniture</u>`, `<u>puzzle without its pieces</u>`, `<u>movie without special effects</u>`],
     typeSpeed: 50,
     backSpeed: 100,
     cursorChar: '',
